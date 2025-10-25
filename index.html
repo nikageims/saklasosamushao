@@ -1,102 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Bright Future - Demo</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Portal</title>
+  <link rel="stylesheet" href="styles/styles.css">
 
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo">W.</div>
-            <nav class="main-nav">
-                <a href="#">Home</a>
-                <a href="#">New</a>
-                <a href="#">Popular</a>
-                <a href="#">Trending</a>
-                <a href="#">Categories</a>
-            </nav>
+
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="W. Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <article class="main-article">
+        <picture>
+          <source media="(min-width: 768px)" srcset="assets/images/image-web-3-desktop.jpg">
+          <source media="(max-width: 767px)" srcset="assets/images/image-web-3-mobile.jpg">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="Web 3.0 Illustration">
+        </picture>
+        <div class="article-content">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div>
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?</p>
+            <a class="read-more">READ MORE</a>
+          </div>
         </div>
-    </header>
+      </article>
 
-    <main class="container">
-        <section class="hero">
-            <div class="hero-media">
-                <img src="assets/hero.svg" alt="Hero image" />
-            </div>
-            <div class="hero-content">
-                <h1>The Bright
-                    <br>Future of
-                    <br>Web 3.0?
-                </h1>
-                <p class="lead">We dive into the next evolution of the web that claims to put the power of the platforms
-                    back into the hands of the people. But is it really fulfilling its promise?</p>
+      <aside class="new-articles">
+        <h2>New</h2>
+        <article class="new-article">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </article>
+        <article class="new-article">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?</p>
+        </article>
+        <article class="new-article">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </article>
+      </aside>
+    </section>
 
-                <a class="btn" href="#">Read more</a>
+    <section class="featured-articles">
+      <article class="featured-article">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Retro PC">
+        <div>
+          <span class="article-number">01</span>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </article>
 
-                <div class="features-row">
-                    <article class="feature">
-                        <img src="assets/thumb1.svg" alt="thumb 1">
-                        <div class="feature-meta">
-                            <span class="num">01</span>
-                            <h4>Reviving Retro PCs</h4>
-                            <p class="muted">What happens when old PCs are given modern upgrades?</p>
-                        </div>
-                    </article>
+      <article class="featured-article">
+        <img src="assets/images/image-top-laptops.jpg" alt="Laptops">
+        <div>
+          <span class="article-number">02</span>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </article>
 
-                    <article class="feature">
-                        <img src="assets/thumb2.svg" alt="thumb 2">
-                        <div class="feature-meta">
-                            <span class="num">02</span>
-                            <h4>Top 10 Laptops of 2022</h4>
-                            <p class="muted">Our best picks for various needs and budgets.</p>
-                        </div>
-                    </article>
-
-                    <article class="feature">
-                        <img src="assets/thumb3.svg" alt="thumb 3">
-                        <div class="feature-meta">
-                            <span class="num">03</span>
-                            <h4>The Growth of Gaming</h4>
-                            <p class="muted">How the pandemic has sparked fresh opportunities.</p>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-
-            <aside class="sidebar">
-                <div class="sidebar-inner">
-                    <h3 class="sidebar-title">New</h3>
-                    <ul class="new-list">
-                        <li>
-                            <h4>Hydrogen VS Electric Cars</h4>
-                            <p class="muted">Will hydrogen-fueled cars ever catch up to EVs?</p>
-                        </li>
-                        <li>
-                            <h4>The Downsides of AI Artistry</h4>
-                            <p class="muted">What are the possible adverse effects of on-demand AI image generation?</p>
-                        </li>
-                        <li>
-                            <h4>Is VC Funding Drying Up?</h4>
-                            <p class="muted">Private funding by VC firms is down 50% YOY. We take a look at what that
-                                means.</p>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container">&copy; Demo Magazine</div>
-    </footer>
+      <article class="featured-article">
+        <img src="assets/images/image-gaming-growth.jpg" alt="Gaming Growth">
+        <div>
+          <span class="article-number">03</span>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>
